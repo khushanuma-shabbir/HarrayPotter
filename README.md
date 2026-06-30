@@ -116,10 +116,13 @@ B.Tech Information Technology
 
 🔗 GitHub: https://github.com/khushanuma-shabbir  
 🔗 Link: https://spell-library.vercel.app/
+</div>
 
 ---
 
-## ⭐ Support This Project
+<div align="center">
+  
+### ⭐ Support This Project
 
 If you like this project, please give it a ⭐ on GitHub.
 
