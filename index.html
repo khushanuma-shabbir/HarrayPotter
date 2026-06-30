@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+      <!-- Responsive Poster -->
+    <picture>
+        <source
+            media="(max-width:768px) and (orientation:portrait)"
+            srcset="assets/hogwarts-vertical.png">
+
+        <img
+            id="posterImage"
+            src="assets/hogwarts.png"
+            class="hero-poster"
+            alt="Hogwarts">
+    </picture>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">Harry Potter</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Admission/Admission.html">Admission</a></li>
+                <li><a href="Game/Game.html">Games</a></li>
+                <li><a href="Books/Books.html">Books</a></li>
+            </ul>
+        </nav>
+
+    <!-- VIDEO -->
+    <video id="hogwartsVideo" class="hero-video" loop playsinline>
+        <source src="assets/hogwarts.webm" type="video/webm">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- TEXT + BUTTON -->
+    <div class="content" id="content">
+        <button id="enterBtn">Press Enter</button>
+    </div>
+    <button id="audioBtn" class="audio-btn">🔊</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

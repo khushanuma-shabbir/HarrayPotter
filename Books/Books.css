@@ -1,0 +1,207 @@
+:root {
+    --gold: #d4a843;
+    --gold-light: #f0d77b;
+    --navy: #0a0e1a;
+    --navy-light: #141b2d;
+    --purple: #2d1b4e;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    background: var(--navy);
+    color: #e8dcc8;
+    overflow-x: hidden;
+}
+
+.glass-card {
+    background: rgba(20, 27, 45, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.glass-card:hover {
+    border-color: rgba(212, 168, 67, 0.7);
+    box-shadow: 0 0 30px rgba(212, 168, 67, 0.15), 0 20px 40px rgba(0,0,0,0.4);
+    transform: translateY(-8px);
+}
+
+.glow-text {
+    text-shadow: 0 0 20px rgba(212, 168, 67, 0.5), 0 0 40px rgba(212, 168, 67, 0.2);
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(3deg); }
+}
+
+@keyframes floatSlow {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes flicker {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.95); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sparkle {
+    0%,100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+.flicker {
+    animation: flicker 3s ease-in-out infinite;
+}
+
+.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.particle {
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    background: var(--gold-light);
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+.candle {
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to top, #f0d77b, #ff9500);
+    border-radius: 2px;
+    position: relative;
+}
+
+.candle::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -3px;
+    width: 10px;
+    height: 14px;
+    background: radial-gradient(ellipse, #ffdd57, #ff9500 60%, transparent 70%);
+    border-radius: 50%;
+    animation: flicker 2s ease-in-out infinite;
+}
+
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(10,14,26,0.3), rgba(10,14,26,0.85) 70%, rgba(10,14,26,1));
+}
+
+.bookshelf {
+    background: linear-gradient(180deg, #2a1810 0%, #1a0f0a 100%);
+    border: 3px solid #4a2c1a;
+    box-shadow: inset 0 -5px 15px rgba(0,0,0,0.5);
+}
+
+.book {
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-10px) rotate(-2deg);
+}
+
+.stat-card {
+    background: radial-gradient(ellipse at center, rgba(212,168,67,0.1), transparent);
+}
+
+.cursor-sparkle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: var(--gold-light);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    padding:25px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
+
+    background:transparent;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    color:white;
+    font-size:36px;
+    font-weight:bold;
+}
+
+.nav-links{
+    font-family:'Playfair Display', serif;
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:900;
+    letter-spacing:1px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:26px;
+    }
+
+    .nav-links{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links a{
+        font-size:16px;
+    }
+
+    .nav-links .admission-btn{
+        padding:8px 15px;
+    }
+}

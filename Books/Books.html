@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizarding Books Library</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;800&amp;family=Alegreya+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Books.css">
+</head>
+<body class="min-h-screen">
+  <!-- Particles container -->
+  <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
+  <div id="cursor-trail" class="fixed inset-0 pointer-events-none z-50"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Harry Potter</div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Admission/Admission.html">Admission</a></li>
+        <li><a href="../Game/Game.html">Games</a></li>
+        <li><a href="Books.html">Books</a></li>
+    </ul>
+</nav>
+  <!-- Hero Section -->
+  <header class="relative w-full" style="min-height:40vh;">
+    <img class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600&q=80" alt="Hero background">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 py-8" style="min-height:80vh;">
+           <!-- Floating candles -->
+      <div class="absolute top-10 left-[15%] float" style="animation-delay: 0s;">
+        <div class="candle"></div>
+      </div>
+      <div class="absolute top-24 left-[10%] float" style="animation-delay: 0.8s;">
+        <div class="candle"></div>
+      </div>
+      <div class="absolute top-12 right-[5%] float" style="animation-delay: 2.2s;">
+        <div class="candle"></div>
+      </div>
+      <div class="absolute top-20 left-[90%] float" style="animation-delay: 1s;">
+        <div class="candle"></div>
+      </div>
+
+      <!-- Owl doodle -->
+      <div class="float-slow mb-6 text-6xl">🦉</div>
+
+      <h1 class="glow-text text-4xl md:text-6xl lg:text-7xl font-bold mb-4 fade-in" style="color: var(--gold);">
+        Wizarding Books Library
+      </h1>
+      <p class="text-lg md:text-xl max-w-2xl fade-in" style="animation-delay: 0.3s;">
+        A magical collection of spells, potions, and lore for every witch and wizard's study desk.
+      </p>
+
+      <!-- Floating elements -->
+      <div class="absolute bottom-20 left-10 float text-3xl" style="animation-delay: 0.5s;">📜</div>
+      <div class="absolute bottom-15 right-6 float text-3xl" style="animation-delay: 1.8s;">📚</div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- Books Categories -->
+      <section class="px-4 md:px-8 pt-0 pb-16 max-w-7xl mx-auto">      
+        <h2 class="glow-text text-3xl md:text-4xl font-bold text-center mb-4">Books Categories</h2>
+      <p class="text-center mb-12 opacity-80 max-w-xl mx-auto">Unlock magical knowledge through enchanted books and spellbinding study notes</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+       <!-- Gaurav Note's
+      <div class="glass-card rounded-2xl p-6 transition-all duration-500">
+      <div class="text-4xl mb-3 float-slow">💻</div>
+      <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">Gaurav Note's</h3>
+      <p class="text-sm opacity-70 mb-4">Arrays, Linked List, Trees, Graphs, Dynamic Programming, and Interview Questions.</p>
+      <a href="https://drive.google.com/drive/folders/1jobp7lvzyUM-IoPakznYQr38EyK4PZMK" target="_blank" class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105" 
+      style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;"> 📚 View Notes</a></div> -->
+
+
+       <!-- The Arabian Nights -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">📖</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    The Arabian Nights
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    Journey through magical tales of Aladdin, Ali Baba, Sinbad, and timeless adventures from the legendary collection of Middle Eastern folklore.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1rBFqRj0riBDOj_-GKVlzh1q6QyjFemzi/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     📖 Read Book
+  </a>
+</div>
+
+
+<!-- Harry Potter and the Philosopher's Stone -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">⚡</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Harry Potter and the Philosopher's Stone
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    Enter the Wizarding World as Harry discovers magic, friendship, Hogwarts, and the mystery of the legendary Philosopher's Stone.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1tonuoy5ew3EFRqP8WFYWtsRhGBFHfXHj/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     ⚡ Read Book
+  </a>
+</div>
+
+
+<!-- The Time Machine -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">⏳</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    The Time Machine
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    H.G. Wells' timeless science fiction classic follows an inventor who travels far into the future, uncovering humanity's astonishing destiny.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1Ya5SrlzdVqmaStOwmYIM8mwclnhlCQ4o/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     ⏳ Read Book
+  </a>
+</div>
+
+
+      <!-- Percy Jackson & the Olympians: The Lightning Thief -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">⚔️</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Percy Jackson & the Olympians: The Lightning Thief
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    Follow Percy Jackson as he discovers he's a demigod and embarks on an epic quest through Greek mythology to recover Zeus's stolen lightning bolt.
+  </p>
+
+  <a href="https://drive.google.com/file/d/13H2ibZaq-lps7aTuIlulzK7fPYHqIOQV/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     ⚔️ Read Book
+  </a>
+</div>
+
+
+<!-- Project Hail Mary -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">🚀</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Project Hail Mary
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    A thrilling sci-fi adventure where a lone astronaut awakens in deep space with no memory and must solve impossible scientific mysteries to save humanity.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1FfQZf2j8It0GwUWQAwVdPiIDJ26jO5Ka/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     🚀 Read Book
+  </a>
+</div>
+
+
+<!-- Klara and the Sun -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">🤖</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Klara and the Sun
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    A touching science fiction novel about Klara, an Artificial Friend who explores love, hope, and what it truly means to be human.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1-JBjOmg0TBod-FG-cPYO1Boc6wEMJ5bb/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     🤖 Read Book
+  </a>
+</div>
+
+<!-- Me Before You -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">💙</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Me Before You
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    An emotional and heartwarming novel about love, friendship, and how two lives can change each other in the most unexpected ways.
+  </p>
+
+  <a href="https://drive.google.com/file/d/1IzA2sTUM3t2k6TccDvjo8XmI7OHVuicg/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     💙 Read Book
+  </a>
+</div>
+
+<!-- Neuromancer -->
+<div class="glass-card rounded-2xl p-6 transition-all duration-500">
+  <div class="text-4xl mb-3 float-slow">🌐</div>
+
+  <h3 class="text-xl font-bold mb-2" style="color: var(--gold);">
+    Neuromancer
+  </h3>
+
+  <p class="text-sm opacity-70 mb-4">
+    A groundbreaking cyberpunk classic where hackers, artificial intelligence, and powerful corporations collide in a futuristic digital world.
+  </p>
+
+  <a href="https://drive.google.com/file/d/11QeNNTfT9Nj5_1g9jvCeS3U4h1wL4TR_/view?usp=sharing"
+     target="_blank"
+     class="inline-block px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105"
+     style="background: linear-gradient(135deg, #d4a843, #a67c2e); color:#0a0e1a;">
+     🌐 Read Book
+  </a>
+</div>
+</div>
+</section>
+</main>
+
+  <!-- Footer -->
+  <footer class="relative px-4 py-12 text-center border-t border-amber-900/30">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-2 left-[10%] text-yellow-300 opacity-50 float text-xs">✦</div>
+      <div class="absolute top-4 right-[20%] text-yellow-300 opacity-40 float text-sm" style="animation-delay:1s;">✧</div>
+      <div class="absolute top-6 left-[50%] text-yellow-300 opacity-30 float text-xs" style="animation-delay:2s;">✦</div>
+    </div>
+    <p class="text-lg italic opacity-80 mb-6 max-w-lg mx-auto">"It does not do to dwell on dreams and forget to live." — keep your notes, but live your magic.</p>
+   <div class="flex justify-center gap-6 mt-6">
+
+    <!-- GitHub -->
+    <a href="https://github.com/khushanuma-shabbir"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-[#d4a843] transition duration-300 hover:scale-110">
+      <i data-lucide="github" class="w-5 h-5"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/khushanuma-mansuri-7b0789292/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-[#d4a843] transition duration-300 hover:scale-110">
+      <i data-lucide="linkedin" class="w-5 h-5"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:khushanuma.shabbir@gmail.com"
+      class="hover:text-[#d4a843] transition duration-300 hover:scale-110">
+      <i data-lucide="mail" class="w-5 h-5"></i>
+    </a>
+
+    <!-- Portfolio -->
+    <a href="https://khushanumashabbir.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-[#d4a843] transition duration-300 hover:scale-110">
+      <i data-lucide="globe" class="w-5 h-5"></i>
+    </a>
+
+      </div>
+  </footer>
+
+  <script src="Books.js"></script>
+</body>
+</html>

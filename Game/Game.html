@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Hands</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+
+<body>
+    <video id="input_video"></video>
+    <canvas id="output_canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Harry Potter</div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Admission/Admission.html">Admission</a></li>
+        <li><a href="Game.html">Games</a></li>
+        <li><a href="../Books/Books.html">Books</a></li>
+    </ul>
+</nav>
+
+    <audio id="bgMusic" loop>
+    <source src="assets/Audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn">🔊</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <script src="Game.js"></script>
+</body>
+
+</html>
